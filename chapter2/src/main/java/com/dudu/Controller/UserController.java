@@ -35,4 +35,9 @@ public class UserController {
         //return yearhope;
         return configBean.getName()+configBean.getWant();
     }
+
+    @RequestMapping("/test")
+    public String test(){
+        return configTestBean.getName() + configTestBean.getWant();
+    }
 }
